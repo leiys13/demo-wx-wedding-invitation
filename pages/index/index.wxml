@@ -1,0 +1,3 @@
+<view class="player player-{{ isPlayingMusic ? 'play' : 'pause' }}" bindtap="play">
+  <image src="/images/music-played.png"/>
+</view>
