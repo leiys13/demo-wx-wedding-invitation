@@ -1,3 +1,41 @@
+<!-- 播放器 -->
 <view class="player player-{{ isPlayingMusic ? 'play' : 'pause' }}" bindtap="play">
   <image src="/images/music-played.png"/>
+</view>
+
+<!-- 背景图 -->
+<image class="bg" src="/images/bg_1.jpg"/>
+
+<!-- 内容区域 -->
+<view class="content">
+  <!-- 顶部gif图片 -->
+  <image class="content-gif" src="/images/save_the_date.gif"/>
+  <!-- 标题 -->
+  <view class="content-title">邀请函</view>
+  <!-- 新郎和新娘的合照 -->
+  <view class="content-avatar">
+    <image src="/images/4.jpg"/>
+  </view>
+  <!-- 新郎和新娘的名字 -->
+  <view class="content-info">
+    <view class="content-name" bindtap="callGroom">
+      <image src="/images/phone_icon.png"/>
+      <view>张无忌</view>
+      <view>新郎</view>
+    </view>
+    <view class="content-wedding">
+      <image src="/images/love.png"/>
+    </view>
+    <view class="content-name" bindtap="callBride">
+      <image src="/images/phone_icon.png"/>
+      <view>赵敏</view>
+      <view>新娘</view>
+    </view>
+  </view>
+  <!-- 婚礼信息 -->
+  <view class="content-address">
+    <view>我们诚邀您来参加我们的婚礼</view>
+    <view>时间：2020年05月20日</view>
+    <view>地点：郴州市嘉禾县千禧大酒店</view>
+  </view>
 </view>
