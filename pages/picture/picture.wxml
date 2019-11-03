@@ -1,2 +1,9 @@
-<!--pages/picture/picture.wxml-->
-<text>pages/picture/picture.wxml</text>
+<!-- <swiper indicator-color="white" indicator-active-color="#ff4c91" indicator-dots autoplay interval="3500" duration="1000" vertical circular>
+  <swiper-item wx:for="{{ imgUrls }}" wx:key="*this">
+    <image src="{{ item }}" mode="widthFix"/>
+  </swiper-item>
+</swiper> -->
+<view class="image-view" wx:for="{{ imgUrls }}" wx:key="*this"> 
+  <image src="{{ item.img }}" mode="widthFix"/>
+  <text>{{ item.mark }}</text>
+</view>
