@@ -5,62 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    latitude: 25.597831,
+    longitude: 112.362335,
+    markers: [{
+      iconPath: '/images/4.jpg',
+      id: 0,
+      latitude: 25.597831,
+      longitude: 112.362335,
+      width: 30,
+      height: 30
+    }]
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  markertap: function() {
+    wx.openLocation({
+      latitude: this.data.latitude,
+      longitude: this.data.longitude,
+      name: '天禧大酒店',
+      address: '郴州市嘉禾县晋屏北路98号'
+    })
   }
 })
